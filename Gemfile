@@ -6,8 +6,7 @@ ruby '2.6.3'
 gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'dotenv-rails', groups: [:development, :test]
-
-
+gem 'dotenv', '~> 2.7', '>= 2.7.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
 # Use postgresql as the database for Active Record
