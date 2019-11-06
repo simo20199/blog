@@ -1,0 +1,14 @@
+
+<%= simple_form_for(@article) do |form| %>
+  <%= form.error_notification %>
+  <%= form.error_notification message: form.object.errors[:base].to_sentence if form.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= form.input :title %>
+    <%= form.input :body %>
+  </div>
+
+  <div class="form-actions">
+    <%= form.button :submit %>
+  </div>
+<% end %>
