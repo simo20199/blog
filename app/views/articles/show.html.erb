@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<% if @article.photo.present? %>
+   <%= cl_image_path @article.photo, height: 300, width: 400, crop: :fill %>
+<% end %>
+
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
